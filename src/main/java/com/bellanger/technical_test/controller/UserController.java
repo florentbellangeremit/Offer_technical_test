@@ -3,7 +3,6 @@ package com.bellanger.technical_test.controller;
 import com.bellanger.technical_test.dto.request.UserRequest;
 import com.bellanger.technical_test.dto.response.UserResponse;
 import com.bellanger.technical_test.service.UserService;
-import io.swagger.annotations.Api;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -14,7 +13,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import java.net.URI;
 
 @RequestMapping("/user")
-@Api("UserController")
+@RestController
 public class UserController {
     private final UserService userService;
 

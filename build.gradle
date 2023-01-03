@@ -27,7 +27,6 @@ dependencies {
     implementation 'org.mapstruct:mapstruct:1.5.3.Final'
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '3.0.1'
     implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: '2.14.1'
-    implementation group: 'io.springfox', name: 'springfox-boot-starter', version: '3.0.0'
 
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.3.Final'
     annotationProcessor 'org.projectlombok:lombok'

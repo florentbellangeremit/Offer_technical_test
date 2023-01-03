@@ -7,10 +7,7 @@ import com.bellanger.technical_test.dto.response.UserResponse;
 import com.bellanger.technical_test.exception.controller.ControllerAdvisor;
 import com.bellanger.technical_test.service.UserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -50,6 +47,9 @@ class TechnicalTestApplicationTests {
         this.mapper = new ObjectMapper();
     }
 
+    @AfterAll
+    public void tearDown() {
+    }
 
     @Test
     public void postUserFailedUnderEighteen() {
