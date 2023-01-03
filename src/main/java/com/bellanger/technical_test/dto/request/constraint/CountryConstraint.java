@@ -10,7 +10,7 @@ import java.lang.annotation.*;
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
 public @interface CountryConstraint {
-    String message() default "Country must be FR";
+    String message() default "Country must be FRA";
 
     Class<?>[] groups() default {};
 
